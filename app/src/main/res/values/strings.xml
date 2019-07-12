@@ -4,4 +4,30 @@
     <string name="amountBracelet">Ingrese cantidad de pulseras a comprar:</string>
     <string name="hintAmountBracelet">Número de pulseras a comprar</string>
     <string name="chooseMaterials">Elegir Materiales</string>
+    <string name="txtView_material">Selecciones Material:</string>
+    <string name="txtView_Tipo_Dije">Seleccione Tipo de Dije:</string>
+    <string name="txtView_Tipo_Material_Dije">Seleccione Material del Dije:</string>
+    <string name="btn_Calcular">Realizar Compra</string>
+    <string name="Cuero">Cuero</string>
+    <string name="Cuerda">Cuerda</string>
+    <string name="Martillo">Martillo</string>
+    <string name="Ancla">Ancla</string>
+    <string name="Oro">Oro</string>
+    <string name="OroRosado">Oro Rosado</string>
+    <string name="Plata">Plata</string>
+    <string name="Niquel">Niquel</string>
+    <string-array name="material">
+        <item>@string/Cuero</item>
+        <item>@string/Cuerda</item>
+    </string-array>
+    <string-array name="dije">
+        <item>@string/Martillo</item>
+        <item>@string/Ancla</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>@string/Oro</item>
+        <item>@string/OroRosado</item>
+        <item>@string/Plata</item>
+        <item>@string/Niquel</item>
+    </string-array>
 </resources>
