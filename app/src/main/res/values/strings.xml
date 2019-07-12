@@ -16,6 +16,7 @@
     <string name="OroRosado">Oro Rosado</string>
     <string name="Plata">Plata</string>
     <string name="Niquel">Niquel</string>
+    <string name="resultado" translatable="false" />
     <string-array name="material">
         <item>@string/Cuero</item>
         <item>@string/Cuerda</item>

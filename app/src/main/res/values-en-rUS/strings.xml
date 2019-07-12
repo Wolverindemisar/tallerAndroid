@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">tallerAndroid</string>
+    <string name="pageTitle">Sale module bracelet</string>
+    <string name="amountBracelet">Enter amount of bracelet to buy:</string>
+    <string name="hintAmountBracelet">Number of bracelets to buy</string>
+    <string name="chooseMaterials">Choose Materials</string>
+    <string name="txtView_Tipo_Dije">Select Charm Type:</string>
+    <string name="txtView_material">Material Selections:</string>
+    <string name="txtView_Tipo_Material_Dije">Select Charm Material:</string>
+    <string name="btn_Calcular">Make a purchase</string>
+    <string name="Cuero">Leather</string>
+    <string name="Cuerda">Rope</string>
+    <string name="Martillo">Hammer</string>
+    <string name="Ancla">Anchor</string>
+    <string name="Oro">Gold</string>
+    <string name="OroRosado">Pink gold</string>
+    <string name="Plata">Silver</string>
+    <string name="Niquel">Nickel</string>
+</resources>

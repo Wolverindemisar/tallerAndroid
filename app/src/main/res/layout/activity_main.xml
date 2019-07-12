@@ -66,7 +66,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/cmbMaterial"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
@@ -79,7 +79,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/cmbTipoDije"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
@@ -92,7 +92,7 @@
                 android:textStyle="bold" />
 
             <Spinner
-                android:id="@+id/spinner3"
+                android:id="@+id/cmbMaterialDije"
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
@@ -102,6 +102,15 @@
                 android:layout_height="wrap_content"
                 android:text="@string/btn_Calcular" />
         </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
 
     </LinearLayout>
 
