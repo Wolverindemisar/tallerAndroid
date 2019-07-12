@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">tallerAndroid</string>
+    <string name="pageTitle">Modulo Venta Manillas</string>
+    <string name="amountBracelet">Ingrese cantidad de pulseras a comprar:</string>
+    <string name="hintAmountBracelet">Número de pulseras a comprar</string>
+    <string name="chooseMaterials">Elegir Materiales</string>
 </resources>
