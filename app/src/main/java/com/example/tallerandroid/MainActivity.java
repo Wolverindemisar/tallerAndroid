@@ -2,6 +2,7 @@ package com.example.tallerandroid;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -39,5 +40,25 @@ public class MainActivity extends AppCompatActivity {
         tipoMaterialDije = getResources().getStringArray(R.array.tipo);
         ArrayAdapter<String> adapterTipoMaterialDije = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tipoMaterialDije);
         comboTipoMaterialDije.setAdapter(adapterTipoMaterialDije);
+    }
+
+    public void visualizarLayout()
+    {
+
+    }
+
+    public void Limpiar()
+    {
+
+    }
+
+    public void validar()
+    {
+
+    }
+
+    public void calcular(View v)
+    {
+
     }
 }
