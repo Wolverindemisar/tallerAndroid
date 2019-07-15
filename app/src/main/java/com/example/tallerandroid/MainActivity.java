@@ -14,9 +14,11 @@ public class MainActivity extends AppCompatActivity {
     String materialManilla[];
     String tipoDije[];
     String tipoMaterialDije[];
+    String moneda[];
     Spinner comboMaterialManilla;
     Spinner comboTipoDije;
     Spinner comboTipoMaterialDije;
+    Spinner comboMoneda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,5 +41,9 @@ public class MainActivity extends AppCompatActivity {
         tipoMaterialDije = getResources().getStringArray(R.array.tipo);
         ArrayAdapter<String> adapterTipoMaterialDije = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tipoMaterialDije);
         comboTipoMaterialDije.setAdapter(adapterTipoMaterialDije);
+
+        moneda = getResources().getStringArray(R.array.moneda);
+        ArrayAdapter<String> adapterMoneda = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, moneda);
+        comboMoneda.setAdapter(adapterMoneda);
     }
 }

@@ -96,6 +96,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp" />
 
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipoMoneda"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/cmbMoneda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
             <Button
                 android:id="@+id/btn_Calcular_Venta"
                 android:layout_width="match_parent"
