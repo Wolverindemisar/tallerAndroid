@@ -118,6 +118,12 @@
                 android:layout_height="wrap_content"
                 android:onClick="calcular"
                 android:text="@string/btn_Calcular" />
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/limpiar" />
         </LinearLayout>
 
         <TextView

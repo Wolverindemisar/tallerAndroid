@@ -19,6 +19,7 @@
     <string name="dolar">USD</string>
     <string name="peso">COP</string>
     <string name="tipoMoneda">Tipo de Moneda:</string>
+    <string name="limpiar">Limpiar</string>
     <string name="resultado" translatable="false" />
 
     <string-array name="material">
