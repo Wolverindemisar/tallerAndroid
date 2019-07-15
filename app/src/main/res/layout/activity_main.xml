@@ -48,6 +48,7 @@
                 android:id="@+id/btn_Materiales"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="visualizarLayout"
                 android:text="@string/chooseMaterials" />
         </LinearLayout>
 
@@ -56,6 +57,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:visibility="invisible"
             tools:layout_editor_absoluteY="202dp">
 
             <TextView
@@ -101,6 +103,7 @@
                 android:id="@+id/btn_Calcular_Venta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:onClick="calcular"
                 android:text="@string/btn_Calcular" />
         </LinearLayout>
 
