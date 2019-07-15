@@ -16,7 +16,11 @@
     <string name="OroRosado">Oro Rosado</string>
     <string name="Plata">Plata</string>
     <string name="Niquel">Niquel</string>
+    <string name="dolar">USD</string>
+    <string name="peso">COP</string>
+    <string name="tipoMoneda">Tipo de Moneda:</string>
     <string name="resultado" translatable="false" />
+
     <string-array name="material">
         <item>@string/Cuero</item>
         <item>@string/Cuerda</item>
@@ -31,4 +35,9 @@
         <item>@string/Plata</item>
         <item>@string/Niquel</item>
     </string-array>
+    <string-array name="moneda">
+        <item>@string/peso</item>
+        <item>@string/dolar</item>
+    </string-array>
+
 </resources>

@@ -17,4 +17,7 @@
     <string name="OroRosado">Pink gold</string>
     <string name="Plata">Silver</string>
     <string name="Niquel">Nickel</string>
+    <string name="peso">COP</string>
+    <string name="dolar">USD</string>
+    <string name="tipoMoneda">" Type of currency"</string>
 </resources>
