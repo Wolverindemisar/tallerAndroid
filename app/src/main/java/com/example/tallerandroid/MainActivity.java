@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         comboMaterialManilla = findViewById(R.id.cmbMaterial);
         comboTipoDije = findViewById(R.id.cmbTipoDije);
         comboTipoMaterialDije = findViewById(R.id.cmbMaterialDije);
+        comboMoneda = findViewById(R.id.cmbMoneda);
         layout = findViewById(R.id.layout_vertical);
 
         materialManilla = getResources().getStringArray(R.array.material);
@@ -65,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         comboMaterialManilla.setSelection(0);
         comboTipoMaterialDije.setSelection(0);
         comboTipoDije.setSelection(0);
+        comboMoneda.setSelection(0);
         resultado.setText("");
         cant_Manillas.requestFocus();
         layout.setVisibility(View.INVISIBLE);
@@ -77,8 +79,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void calcular(View v)
     {
-        if(validar())
-        {
             int opcComboMaterialManilla;
             int opcComboTipoDije;
             int opComboTipoMaterialDije;
@@ -88,8 +88,6 @@ public class MainActivity extends AppCompatActivity {
             opComboTipoMaterialDije = comboTipoMaterialDije.getSelectedItemPosition();
 
 
-
             Limpiar();
-        }
     }
 }
