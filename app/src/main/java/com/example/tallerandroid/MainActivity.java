@@ -57,10 +57,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void visualizarLayout(View v)
     {
-        layout.setVisibility(View.VISIBLE);
+        if(validar())
+        {
+            layout.setVisibility(View.VISIBLE);
+        }
     }
 
-    public void Limpiar()
+    public void Limpiar(View v)
     {
         cant_Manillas.setText("");
         comboMaterialManilla.setSelection(0);
@@ -69,25 +72,107 @@ public class MainActivity extends AppCompatActivity {
         comboMoneda.setSelection(0);
         resultado.setText("");
         cant_Manillas.requestFocus();
-        layout.setVisibility(View.INVISIBLE);
+        layout.setVisibility(v.INVISIBLE);
     }
 
     public boolean validar()
     {
+        if(cant_Manillas.getText().toString().isEmpty())
+        {
+            cant_Manillas.setError(getResources().getString(R.string.error_1));
+            return false;
+        }
         return true;
     }
 
     public void calcular(View v)
     {
+        if(validar())
+        {
             int opcComboMaterialManilla;
             int opcComboTipoDije;
             int opComboTipoMaterialDije;
-            num = Double.parseDouble(cant_Manillas.getText().toString());
+            int opComboMoneda;
             opcComboMaterialManilla = comboMaterialManilla.getSelectedItemPosition();
             opcComboTipoDije = comboTipoDije.getSelectedItemPosition();
             opComboTipoMaterialDije = comboTipoMaterialDije.getSelectedItemPosition();
+            opComboMoneda = comboMoneda.getSelectedItemPosition();
+
+            if(opcComboMaterialManilla == 0 && opcComboTipoDije == 0)
+            {
+                if(opComboTipoMaterialDije == 0 || opComboTipoMaterialDije == 1)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,100));
+                }
+                else if(opComboTipoMaterialDije == 2)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,80));
+                }
+                else
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,70));
+                }
+            }
+            else if(opcComboMaterialManilla == 0 && opcComboTipoDije == 1)
+            {
+                if(opComboTipoMaterialDije == 0 || opComboTipoMaterialDije == 1)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,120));
+                }
+                else if(opComboTipoMaterialDije == 2)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,100));
+                }
+                else
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,90));
+                }
+            }
+            else if(opcComboMaterialManilla == 1 && opcComboTipoDije == 0)
+            {
+                if(opComboTipoMaterialDije == 0 || opComboTipoMaterialDije == 1)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,90));
+                }
+                else if(opComboTipoMaterialDije == 2)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,70));
+                }
+                else
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,50));
+                }
+            }
+            else
+            {
+                if(opComboTipoMaterialDije == 0 || opComboTipoMaterialDije == 1)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,110));
+                }
+                else if(opComboTipoMaterialDije == 2)
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,90));
+                }
+                else
+                {
+                    resultado.setText("" + conversionMoneda(opComboMoneda,80));
+                }
+            }
+        }
+    }
 
 
-            Limpiar();
+    public double conversionMoneda(int op,double val)
+    {
+        num = Double.parseDouble(cant_Manillas.getText().toString());
+        switch (op)
+        {
+            case 0:
+                val = (val * 3200) * num;
+                return val;
+            case 1:
+                return (val * num);
+        }
+        return 0;
     }
 }

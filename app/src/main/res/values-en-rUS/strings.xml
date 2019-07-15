@@ -21,4 +21,5 @@
     <string name="dolar">USD</string>
     <string name="tipoMoneda">" Type of currency"</string>
     <string name="limpiar">Clean</string>
+    <string name="error_1">" Enter a number of bracelets to buy"</string>
 </resources>

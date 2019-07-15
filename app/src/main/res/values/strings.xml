@@ -20,6 +20,7 @@
     <string name="peso">COP</string>
     <string name="tipoMoneda">Tipo de Moneda:</string>
     <string name="limpiar">Limpiar</string>
+    <string name="error_1">Ingrese un número de manillas a comprar</string>
     <string name="resultado" translatable="false" />
 
     <string-array name="material">
