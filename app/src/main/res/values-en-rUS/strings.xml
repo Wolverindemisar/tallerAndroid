@@ -20,4 +20,5 @@
     <string name="peso">COP</string>
     <string name="dolar">USD</string>
     <string name="tipoMoneda">" Type of currency"</string>
+    <string name="limpiar">Clean</string>
 </resources>
